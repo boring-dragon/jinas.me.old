@@ -41,9 +41,9 @@
     
                 <div class="ml-auto flex items-center">
                     <a href="/" class="text-white no-underline hover:underline text-xs font-bold uppercase">Home</a>
-                    <a href="/about" class="ml-5 text-white no-underline hover:underline text-xs font-bold uppercase">About</a>
-                    <a href="/timeline" class="ml-5 text-white no-underline hover:underline text-xs font-bold uppercase">Timeline</a>
-                    <a href="/projects" class="ml-5 text-white no-underline hover:underline text-xs font-bold uppercase">Projects</a>
+                    <a href="/pages/about" class="ml-5 text-white no-underline hover:underline text-xs font-bold uppercase">About</a>
+                    <a href="/pages/timeline" class="ml-5 text-white no-underline hover:underline text-xs font-bold uppercase">Timeline</a>
+                    <a href="/pages/projects" class="ml-5 text-white no-underline hover:underline text-xs font-bold uppercase">Projects</a>
                 </div>
             </div>
         </div>

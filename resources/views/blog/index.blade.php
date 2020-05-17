@@ -23,7 +23,7 @@
     <a class="no-underline transition block" href="/{{$post->slug}}">
             <div class="w-full mb-10 p-5 bg-light rounded">
                                     <p class="text-muted font-sans text-xs mb-2">
-                                                    <span>{{$post->publish_date->diffforhumans()}} —</span>
+                                                    <span>Updated: {{$post->updated_at->diffforhumans()}} —</span>
                                                 <span class="uppercase">{{read_time($post->body)}}</span>
 
                                             </p>

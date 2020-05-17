@@ -9,10 +9,7 @@
         </div>
         <div class="lg:pl-5 leading-loose text-text-color w-full lg:w-5/6">
             <div>
-                I'm
-                <a href="https://twitter.com/rootfs7">Mohamed Jinas</a>, Software Developer, Science Lover, Electronic Hobbyist
-                <br>
-                This is my personal website mainly to record my studies, research, experiments and other interesting things I come across. I just love writing things :)
+             {{$author->bio}}
             </div>
         </div>
     </div>

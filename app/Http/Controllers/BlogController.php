@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Wink\WinkPost;
+use Wink\WinkAuthor;
 
 class BlogController extends Controller
 {    
@@ -16,6 +17,7 @@ class BlogController extends Controller
      */
     public function index(Request $request)
     {
+        $author = WinkAuthor::first();
         $posts = WinkPost::with('tags')
             ->live()
             ->orderBy('publish_date', 'DESC')
@@ -23,7 +25,8 @@ class BlogController extends Controller
 
 
         return view('blog.index', [
-            'posts' => $posts
+            'posts' => $posts,
+            'author' => $author
         ]);
     }
     

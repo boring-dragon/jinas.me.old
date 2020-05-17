@@ -9,7 +9,7 @@
         </div>
         <div class="lg:pl-5 leading-loose text-text-color w-full lg:w-5/6">
             <div>
-             {{$author->bio}}
+             {!!$author->bio!!}
             </div>
         </div>
     </div>

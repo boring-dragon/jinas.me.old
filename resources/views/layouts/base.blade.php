@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.13.1/build/styles/sunburst.min.css">
 
     <!-- Styles -->
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/highlight.js@10.0.3/styles/night-owl.css" rel="stylesheet">
 
            

@@ -5,19 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Jinas.me - {{$post->title ?? ''}}</title>
+<title>Jinas.me - {{$article->title ?? ''}}</title>
 
     <meta name="theme-color" content="#011627">
 
-    <meta name="twitter:title" content="{{$post->title ?? 'Jinas.me  - Cooking something :)'}}">
-    <meta name="og:title" content="{{$post->title ?? 'Jinas.me  - Cooking something :)'}}">
+    <meta name="twitter:title" content="{{$article->title ?? 'Jinas.me  - Cooking something :)'}}">
+    <meta name="og:title" content="{{$article->title ?? 'Jinas.me  - Cooking something :)'}}">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:description" content="{{$post->excerpt ?? 'Cooking something :)'}}">
+    <meta name="twitter:description" content="{{$article->excerpt ?? 'Cooking something :)'}}">
     <meta name="twitter:site" content="@jinas123">
-    <meta name="twitter:image" content="{{$post->featured_image ?? '/images/og.jpg'}}">
+    <meta name="twitter:image" content="{{$article->featured_image ?? '/images/og.jpg'}}">
 
-    <meta name="og:image" content="{{$post->featured_image ?? '/images/og.jpg'}}">
+    <meta name="og:image" content="{{$article->featured_image ?? '/images/og.jpg'}}">
     <meta name="og:type" content="website">
     <meta name="og:locale" content="en_US">
 

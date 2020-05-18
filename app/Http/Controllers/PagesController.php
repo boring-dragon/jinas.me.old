@@ -13,7 +13,7 @@ class PagesController extends Controller
     {
         $pages = WinkPage::where('slug', $slug)->firstOrFail();
         return view('blog.article', [
-            'post' => $pages
+            'article' => $pages
         ]);
     }
 }

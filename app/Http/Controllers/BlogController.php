@@ -42,7 +42,7 @@ class BlogController extends Controller
     {
         $post = WinkPost::where('slug', $slug)->with('tags')->firstOrFail();
         return view('blog.article', [
-            'post' => $post
+            'article' => $post
         ]);
     }
 }

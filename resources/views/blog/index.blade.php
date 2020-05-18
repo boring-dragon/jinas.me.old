@@ -20,7 +20,11 @@
     <a class="no-underline transition block" href="/{{$post->slug}}">
             <div class="w-full mb-10 p-5 bg-light rounded">
                                     <p class="text-muted font-sans text-xs mb-2">
-                                                    <span>Updated: {{$post->updated_at->diffforhumans()}} —</span>
+                                        @if ($post->updated_at->gte(Carbon\Carbon::today()))
+                                        <span class="text-green">Recently Updated: {{$post->updated_at->diffforhumans()}} —</span>
+                                        @else
+                                        <span>Updated: {{$post->updated_at->diffforhumans()}} —</span>
+                                        @endif
                                                 <span class="uppercase">{{read_time($post->body)}}</span>
 
                                             </p>

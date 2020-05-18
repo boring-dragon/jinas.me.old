@@ -4,7 +4,11 @@
 <h1 class="mb-5 font-sans">{{$post->title}}</h1>
 
     <p class="text-muted text-sm font-sans block">
-                        <span>Updated: {{$post->updated_at->diffforhumans()}} —</span>
+            @if ($post->updated_at->gte(Carbon\Carbon::today()))
+            <span class="text-green">Recently Updated: {{$post->updated_at->diffforhumans()}} —</span>
+            @else
+            <span>Updated: {{$post->updated_at->diffforhumans()}} —</span>
+            @endif
                     <span class="uppercase">{{read_time($post->body)}}</span>
                 </p>
 

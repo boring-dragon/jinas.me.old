@@ -29,6 +29,7 @@
     <!-- Styles -->
     <link href="/css/styles.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/highlight.js@10.0.3/styles/night-owl.css" rel="stylesheet">
+    <script src="https://unpkg.com/turbolinks@5.2.0/dist/turbolinks.js"></script>
 
            
     

@@ -15,13 +15,13 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:description" content="{{$post->excerpt ?? 'Cooking something :)'}}">
     <meta name="twitter:site" content="@jinas123">
-    <meta name="twitter:image" content="{{$post->featured_image ?? ''}}">
+    <meta name="twitter:image" content="{{$post->featured_image ?? '/images/og.jpg'}}">
 
-    <meta name="og:image" content="{{$post->featured_image ?? ''}}">
+    <meta name="og:image" content="{{$post->featured_image ?? '/images/og.jpg'}}">
     <meta name="og:type" content="website">
     <meta name="og:locale" content="en_US">
 
-    <link rel="icon" type="image/png" sizes="96x96" href="">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/og.jpg">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
     
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.13.1/build/styles/sunburst.min.css">

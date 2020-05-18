@@ -21,7 +21,7 @@
     <meta name="og:type" content="website">
     <meta name="og:locale" content="en_US">
 
-    <link rel="icon" type="image/png" sizes="96x96" href="/images/divinglaravel-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
     
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.13.1/build/styles/sunburst.min.css">

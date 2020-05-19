@@ -42,7 +42,7 @@
             </form>
         </div>
         </div>
-
+        <div class="border-t-2 border-light mt-5 mb-10"></div>
         @foreach ($comments as $comment)
         <div style="background-color:#052230;" class="md:flex rounded-lg p-6 mt-10">
             <div class="text-center md:text-center">

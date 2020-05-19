@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Wink\WinkPost;
 use Wink\WinkAuthor;
+use App\Comment;
 
 class BlogController extends Controller
 {    
@@ -40,9 +41,19 @@ class BlogController extends Controller
      */
     public function show($slug)
     {
-        $post = WinkPost::where('slug', $slug)->with('tags')->firstOrFail();
+       
+        $post = WinkPost::where('slug', $slug)
+        ->with('tags')
+        ->firstOrFail();
+
+        $comments = Comment::where('post_id', $post->id)
+        ->orderBy('created_at', 'DESC')
+        ->take(10)
+        ->get();
+
         return view('blog.article', [
-            'article' => $post
+            'article' => $post,
+            'comments' => $comments
         ]);
     }
 }

@@ -24,6 +24,6 @@ class CommentsController extends Controller
             'comment' => 'required'
         ]));
 
-        return back();
+        return redirect()->back()->with('success', 'Comment published 🔥');   
     }
 }

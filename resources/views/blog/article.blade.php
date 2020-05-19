@@ -16,6 +16,11 @@
        {!!$article->body!!}
     </div>
     <div class="border-t-2 border-light mt-5 mb-10"></div>
+    @if (session()->has('success'))
+            <h2 class="text-sm text-green ml-5 mt-2 mb-5">
+                {{ session()->get('success') }}
+            </h2>
+    @endif
     
     <div class="md:w-3/4 mx-auto px-8 md:px-0">
         <div>
@@ -27,13 +32,13 @@
                 <div class="md:flex mb-6">
                    
                     <div class="w-full md:w-3/4">
-                        <input type="text" name="name" value="" class="border leading-thaana border-grey-light w-full py-2 px-4 rounded" placeholder="Enter your name">
+                        <input type="text" name="name" value="" class="border leading-thaana border-grey-light w-full py-2 px-4 rounded" placeholder="Enter your name" required>
                     </div>
                 </div> 
                 <div class="md:flex">
                     
                     <div class="w-full md:w-3/4">
-                        <textarea value="" name="comment" class="border border-grey-light leading-thaana w-full py-2 px-4 rounded" style="height: 170px;" placeholder="Comment...."></textarea>
+                        <textarea value="" name="comment" class="border border-grey-light leading-thaana w-full py-2 px-4 rounded" style="height: 170px;" placeholder="Comment...." required></textarea>
                     </div>
                 </div> 
                 <div class="text-left mt-4">

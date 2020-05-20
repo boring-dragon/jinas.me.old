@@ -47,6 +47,7 @@
             </form>
         </div>
         </div>
+        @isset($comments)
         <h5 class="mb-2 text-right">{{$comments->count()}} Comments</h5>
         <div class="border-t-2 border-light mt-5 mb-10"></div>
         @foreach ($comments as $comment)
@@ -60,6 +61,8 @@
 
           </div>
         @endforeach
+
+        @endisset
         
             
   

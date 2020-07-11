@@ -15,9 +15,9 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:description" content="{{$article->excerpt ?? 'Cooking something :)'}}">
     <meta name="twitter:site" content="@jinas123">
-    <meta name="twitter:image" content="https://jinas.me/{{$article->featured_image ?? '/images/og.jpg'}}">
+    <meta name="twitter:image" content="https://jinas.me{{$article->featured_image ?? '/images/og.jpg'}}">
 
-    <meta name="og:image" content="https://jinas.me/{{$article->featured_image ?? '/images/og.jpg'}}">
+    <meta name="og:image" content="https://jinas.me{{$article->featured_image ?? '/images/og.jpg'}}">
     <meta name="og:type" content="website">
     <meta name="og:locale" content="en_US">
 

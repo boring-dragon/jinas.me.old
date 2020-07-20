@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Wink\WinkPost;
 use Wink\WinkAuthor;
 use App\Comment;
+use Illuminate\Support\Facades\Redis;
 
 class BlogController extends Controller
 {    
@@ -53,7 +54,8 @@ class BlogController extends Controller
 
         return view('blog.article', [
             'article' => $post,
-            'comments' => $comments
+            'comments' => $comments,
+            'views' => Redis::incr("article.{$slug}.view")
         ]);
     }
 }

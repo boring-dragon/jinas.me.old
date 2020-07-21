@@ -8,15 +8,14 @@ use App\Comment;
 
 class CommentsController extends Controller
 {    
+        
     /**
-     * create
-     * 
-     *  Create a comment
+     * store
      *
      * @param  mixed $request
      * @return void
      */
-    public function create(Request $request)
+    public function store(Request $request)
     {
         Comment::create($this->validate($request, [
             'post_id' => 'required',

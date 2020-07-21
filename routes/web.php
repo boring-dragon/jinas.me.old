@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\CommentsController;
+use App\Http\Controllers\PagesController;
+use App\Http\Controllers\SnippetController;
 use Illuminate\Support\Facades\Redis;
 use Illuminate\Support\Facades\Route;
 
@@ -15,12 +19,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/pages/{slug}','PagesController@show')->name('pages.show');
+Route::get('/pages/{slug}',[PagesController::class, 'show'])->name('pages.show');
 
-Route::get('/','BlogController@index')->name('blog.index');
-Route::get('/{slug}','BlogController@show')->name('blog.show');
+Route::get('/snippets', [SnippetController::class, 'index'])->name('snippet.index');
+Route::get('/snippet/create', [SnippetController::class, 'create'])->name('snippet.create');
 
-Route::post('/comments/create', 'CommentsController@create')->name('comment.create');
+Route::get('/snippet/{snippet}', [SnippetController::class, 'show'])->name('snippet.show');
+Route::post('/snippet', [SnippetController::class, 'store'])->name('snippet.store');
+
+Route::get('/',[BlogController::class, 'index'])->name('blog.index');
+Route::get('/{slug}',[BlogController::class, 'show'])->name('blog.show');
+Route::post('/comments', [CommentsController::class, 'store'])->name('comment.store');
+
+
+
 
 
 

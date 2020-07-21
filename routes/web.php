@@ -19,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+
+
 Route::get('/pages/{slug}',[PagesController::class, 'show'])->name('pages.show');
 
 Route::get('/snippets', [SnippetController::class, 'index'])->name('snippet.index');
@@ -26,6 +28,11 @@ Route::get('/snippet/create', [SnippetController::class, 'create'])->name('snipp
 
 Route::get('/snippet/{snippet}', [SnippetController::class, 'show'])->name('snippet.show');
 Route::post('/snippet', [SnippetController::class, 'store'])->name('snippet.store');
+
+Route::get('/short-link-generate', 'ShortLinkController@create')->name('shorten.link.create');
+Route::post('/short-link-generate', 'ShortLinkController@store')->name('shorten.link.store');
+   
+Route::get('/s/{code}', 'ShortLinkController@shortenLink')->name('shorten.link');
 
 Route::get('/',[BlogController::class, 'index'])->name('blog.index');
 Route::get('/{slug}',[BlogController::class, 'show'])->name('blog.show');

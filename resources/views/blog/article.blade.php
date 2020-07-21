@@ -36,7 +36,7 @@
 
     <div class="md:w-3/4 mx-auto px-8 md:px-0">
         <div>
-            <form method="POST" action="{{route('comment.create')}}">
+            <form method="POST" action="{{route('comment.store')}}">
                 @csrf
 
                 <input type="hidden" name="post_id" value="{{$article->id}}">

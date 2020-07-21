@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Jinas.me - {{$article->title ?? ''}}</title>
+<title>Jinas.me - {{$article->title ?? $snippet->title ?? ''}}</title>
 
     <meta name="theme-color" content="#011627">
 
-    <meta name="twitter:title" content="{{$article->title ?? 'Jinas.me  - Cooking something :)'}}">
-    <meta name="og:title" content="{{$article->title ?? 'Jinas.me  - Cooking something :)'}}">
+    <meta name="twitter:title" content="{{$article->title ?? $snippet->title ?? 'Jinas.me  - Cooking something :)'}}">
+    <meta name="og:title" content="{{$article->title ?? $snippet->title ?? 'Jinas.me  - Cooking something :)'}}">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:description" content="{{$article->excerpt ?? 'Cooking something :)'}}">

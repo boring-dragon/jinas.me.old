@@ -30,6 +30,8 @@
     <link href="/css/styles.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/highlight.js@10.0.3/styles/night-owl.css" rel="stylesheet">
     <script src="https://unpkg.com/turbolinks@5.2.0/dist/turbolinks.js"></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
 
            
     
@@ -70,6 +72,9 @@
                 hljs.highlightBlock(target)
             })
         })();
+
+    GitHubCalendar(".calendar", "jinas123", { responsive: true });
+</script>    
 </script>
 </body>
 </html>

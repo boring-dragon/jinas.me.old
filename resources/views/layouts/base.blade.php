@@ -1,11 +1,11 @@
-
 <!doctype html>
 <html lang="en" class="font-sans antialiased">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Jinas.me - {{$article->title ?? $snippet->title ?? ''}}</title>
+    <title>Jinas.me - {{$article->title ?? $snippet->title ?? ''}}</title>
 
     <meta name="theme-color" content="#011627">
 
@@ -23,7 +23,7 @@
 
     <link rel="icon" type="image/png" sizes="96x96" href="/images/og.jpg">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
-    
+
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.13.1/build/styles/sunburst.min.css">
 
     <!-- Styles -->
@@ -31,38 +31,42 @@
     <link href="https://cdn.jsdelivr.net/npm/highlight.js@10.0.3/styles/night-owl.css" rel="stylesheet">
     <script src="https://unpkg.com/turbolinks@5.2.0/dist/turbolinks.js"></script>
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 
-           
-    
+
 </head>
+
 <body class="text-white body-bg-gradient bg-repeat-x">
     <header class="py-5 mb-10">
         <div class="container mx-auto px-5 lg:max-w-screen">
             <div class="flex items-center">
                 <a href="/" class="no-underline text-white text-2xl font-thin tracking-wide">Jinas.me</a>
-    
+
                 <div class="ml-auto flex items-center">
                     <a href="/" class="text-white no-underline hover:underline text-xs font-bold uppercase">Home</a>
-                    <a href="/pages/about" class="ml-5 text-white no-underline hover:underline text-xs font-bold uppercase">About</a>
-                    <a href="/pages/timeline" class="ml-5 text-white no-underline hover:underline text-xs font-bold uppercase">Timeline</a>
-                    <a href="/pages/projects" class="ml-5 text-white no-underline hover:underline text-xs font-bold uppercase">Projects</a>
-                    <a href="/pages/videos" class="ml-5 text-white no-underline hover:underline text-xs font-bold uppercase">Videos</a>
+                    <a href="/pages/about"
+                        class="ml-5 text-white no-underline hover:underline text-xs font-bold uppercase">About</a>
+                    <a href="/pages/timeline"
+                        class="ml-5 text-white no-underline hover:underline text-xs font-bold uppercase">Timeline</a>
+                    <a href="/pages/projects"
+                        class="ml-5 text-white no-underline hover:underline text-xs font-bold uppercase">Projects</a>
+                    <a href="/pages/videos"
+                        class="ml-5 text-white no-underline hover:underline text-xs font-bold uppercase">Videos</a>
                 </div>
             </div>
         </div>
     </header>
- @yield('content')
+    @yield('content')
 
- <div class="border-t-2 border-light mt-10">
-    <div class="container mx-auto px-5 lg:max-w-screen">
-        <div class="text-muted py-10 text-center">
-        <a href="#" target="_blank">👩‍💻Mohamed Jinas</a>
+    <div class="border-t-2 border-light mt-10">
+        <div class="container mx-auto px-5 lg:max-w-screen">
+            <div class="text-muted py-10 text-center">
+                <a href="#" target="_blank">👩‍💻Mohamed Jinas</a>
+            </div>
         </div>
     </div>
-</div>
 
-<script>
+    <script>
         (function(){
             hljs.initHighlightingOnLoad();
 
@@ -74,7 +78,8 @@
         })();
 
     GitHubCalendar(".calendar", "jinas123", { responsive: true });
-</script>    
-</script>
+    </script>
+    </script>
 </body>
+
 </html>

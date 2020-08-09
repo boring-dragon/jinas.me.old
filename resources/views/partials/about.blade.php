@@ -10,8 +10,8 @@
         </div>
         
     </div>
+
     <div class="calendar">
-        <!-- Loading stuff -->
-        Loading the data just for you.
+       Loading...🔮
     </div>
 </div>

@@ -68,7 +68,7 @@
     <h5 class="mb-2 text-right">{{$comments->count()}} Comments</h5>
     <div class="border-t-2 border-light mt-5 mb-10"></div>
     @foreach ($comments as $comment)
-    <div style="background-color:#052230;" class="md:flex rounded-lg p-6 mt-10">
+    <div style="background-color:#181818;" class="md:flex rounded-lg p-6 mt-10">
         <div class="text-center md:text-center">
             <h2 class="text-base text-muted ml-5 mt-2">
                 {{$comment->name}}

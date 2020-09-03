@@ -7,7 +7,7 @@
             
         @foreach ($posts as $post)
     <a class="no-underline transition block" href="/{{$post->slug}}">
-            <div class="w-full mb-10 p-5 bg-light rounded">
+            <div class="w-full mb-10 p-5 rounded" style="background-color:#181818;">
                                     <p class="text-muted font-sans text-xs mb-2">
                                         @if ($post->updated_at->gte(Carbon\Carbon::today()))
                                         <span class="text-green">Recently Updated: {{$post->updated_at->diffforhumans()}} —</span>

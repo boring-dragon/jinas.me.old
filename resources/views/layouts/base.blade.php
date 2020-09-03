@@ -36,7 +36,7 @@
 
 </head>
 
-<body class="text-white body-bg-gradient bg-repeat-x">
+<body class="text-white">
     <header class="py-5 mb-10">
         <div class="container mx-auto px-5 lg:max-w-screen">
             <div class="flex items-center">

@@ -77,7 +77,7 @@
             })
         })();
 
-    GitHubCalendar(".calendar", "jinas123", { responsive: true });
+    GitHubCalendar(".calendar", "boring-dragon", { responsive: true });
     </script>
     </script>
 </body>

@@ -20,7 +20,9 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::redirect('yaameen-raaboaa-video-leaked', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+Route::get('yaameen-raaboaa-video-leaked', function(){
+    return view('rick');
+});
 Route::redirect('.env', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 Route::redirect('wp-login', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 Route::redirect('wp-admin', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');

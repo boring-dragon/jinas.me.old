@@ -51,7 +51,7 @@ class="  font-sans bg-dark-black text-gray-200 min-h-screen antialiased" :class=
             <div class="mr-3">
                 <ul class="nav">
     <li class="nav-home"><a href="/">Home</a></li>
-    <li class="nav-articles nav-current"><a href="/pages/about">About</a></li>
+    <li class="nav-articles"><a href="/pages/about">About</a></li>
     <li class="nav-now"><a href="/pages/timeline">Timeline</a></li>
     <li class="nav-hire"><a href="/pages/projects">Projects</a></li>
     <li class="nav-hire"><a href="/pages/videos">Videos</a></li>

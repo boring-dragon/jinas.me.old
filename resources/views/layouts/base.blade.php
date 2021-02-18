@@ -109,7 +109,7 @@ class="  font-sans bg-dark-black text-gray-200 min-h-screen antialiased" :class=
 
     <footer class="gh-foot">
         <div class="container text-center py-8">
-                Thanks you for reading © 2021
+               Mohamed Jinas © 2021
         </div>
     </footer>
     <script>

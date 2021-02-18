@@ -47,15 +47,8 @@ class BlogController extends Controller
         ->with('tags')
         ->firstOrFail();
 
-        $comments = Comment::where('post_id', $post->id)
-        ->orderBy('created_at', 'DESC')
-        ->take(10)
-        ->get();
-
         return view('blog.article', [
-            'article' => $post,
-            'comments' => $comments,
-            'views' => Redis::incr("article.{$slug}.view")
+            'article' => $post
         ]);
     }
 }

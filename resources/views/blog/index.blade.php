@@ -2,44 +2,35 @@
 @section('content')
 
 
+<main class="gh-main">
     @include('partials.about')
-    <div class="container mx-auto px-5 lg:max-w-screen">
-            
-        @foreach ($posts as $post)
-    <a class="no-underline transition block" href="/{{$post->slug}}">
-            <div class="w-full mb-10 p-5 rounded" style="background-color:#181818;">
-                                    <p class="text-muted font-sans text-xs mb-2">
-                                        @if ($post->updated_at->gte(Carbon\Carbon::today()))
-                                        <span class="text-green">Recently Updated: {{$post->updated_at->diffforhumans()}} —</span>
-                                        @else
-                                        <span>Updated: {{$post->updated_at->diffforhumans()}} —</span>
-                                        @endif
-                                                <span class="uppercase">{{read_time($post->body)}}</span>
+    <div class="gh-page">
 
-                                            </p>
+        <div class="container py-16">
 
-                    <h2 class="leading-normal block">
-                        {{$post->title}}
-                    </h2>
 
-                    <p class="leading-normal mt-1 text-muted">
-                    {{$post->excerpt ?? ''}}
-                    </p>
 
-                                                </div>
-        </a>
-        @endforeach
-     
-            
-        
-    
-    <div class="uppercase flex items-center justify-center flex-1 py-5 font-sans">
-        
-    <a href="?page={{ $posts->currentPage() + 1 ?? '' }}" rel="next" class="block no-underline text-muted hover:text-white px-5">Check More Articles</a>
+            <div class="gh-postfeed">
+                @foreach ($posts as $post)
+                <article class="gh-card mb-12 post tag-writing">
+                    <a class="gh-card-link" href="/{{$post->slug}}">
+                        <div class="text-left">
+                            <p class="text-gray-100 opacity-70 text-sm mb-2"><time
+                                    datetime="{{$post->created_at}}">{{$post->created_at->diffforhumans()}}</time> <span
+                                    class="bull">&bull;</span> {{read_time($post->body)}}</p>
+                            <h2 class="font-bold mb-2"> {{$post->title}}</h2>
+                            <p class="text-gray-300 mb-4"> {{$post->excerpt ?? ''}}</p>
+                            <span class="text-sm text-gray-100">Read more →</span>
+                        </div>
+                    </a>
+                </article>
+
+                @endforeach
             </div>
 
-</div>
+            {{$posts->links('vendor.pagination.simple-tailwind')}}
 
-
-   
+        </div>
+    </div>
+</main>
 @endsection

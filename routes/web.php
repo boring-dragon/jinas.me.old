@@ -32,6 +32,7 @@ Route::redirect('config.py', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 Route::redirect('.htaccess', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 Route::redirect('.htpass', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 
+/*
 Route::get('/pages/{slug}',[PagesController::class, 'show'])->name('pages.show');
 
 Route::get('/snippets', [SnippetController::class, 'index'])->name('snippet.index');
@@ -45,6 +46,7 @@ Route::post('/short-link-generate', 'ShortLinkController@store')->name('shorten.
    
 Route::get('/s/{code}', 'ShortLinkController@shortenLink')->name('shorten.link');
 
+*/
 Route::get('/',[BlogController::class, 'index'])->name('blog.index');
 Route::get('/{slug}',[BlogController::class, 'show'])->name('blog.show');
 Route::post('/comments', [CommentsController::class, 'store'])->name('comment.store');

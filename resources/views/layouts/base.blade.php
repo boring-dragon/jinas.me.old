@@ -54,6 +54,7 @@ class="  font-sans bg-dark-black text-gray-200 min-h-screen antialiased" :class=
     <li class="nav-articles"><a href="/pages/about">About</a></li>
     <li class="nav-now"><a href="/pages/timeline">Timeline</a></li>
     <li class="nav-hire"><a href="/pages/projects">Projects</a></li>
+    <li class="nav-hire"><a href="/pages/podcast">Podcast</a></li>
     <li class="nav-hire"><a href="/pages/videos">Videos</a></li>
 </ul>
 
@@ -86,6 +87,7 @@ class="  font-sans bg-dark-black text-gray-200 min-h-screen antialiased" :class=
     <li class="nav-articles"><a href="/pages/about">About</a></li>
     <li class="nav-now"><a href="/pages/timeline">Timeline</a></li>
     <li class="nav-hire"><a href="/pages/projects">Projects</a></li>
+    <li class="nav-hire"><a href="/pages/podcast">Podcast</a></li>
     <li class="nav-hire"><a href="/pages/videos">Videos</a></li>
 </ul>
 

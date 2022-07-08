@@ -16,8 +16,7 @@
                     <a class="gh-card-link" href="/{{$post->slug}}">
                         <div class="text-left">
                             <p class="text-gray-100 opacity-70 text-sm mb-2"><time
-                                    datetime="{{$post->created_at}}">{{$post->created_at->diffforhumans()}}</time> <span
-                                    class="bull">&bull;</span> {{read_time($post->body)}}</p>
+                                    datetime="{{$post->created_at}}">{{$post->created_at->diffforhumans()}}</time></p>
                             <h2 class="font-bold mb-2"> {{$post->title}}</h2>
                             <p class="text-gray-300 mb-4"> {{$post->excerpt ?? ''}}</p>
                             <span class="text-sm text-gray-100">Read more →</span>
